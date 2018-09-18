@@ -1,0 +1,121 @@
+/*GLOBAL*/
+html, body {
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+}
+
+body {
+  margin: auto;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+
+  body .nav {
+   position: relative;
+   width: auto;
+   display: block;
+   height: 200px;
+   overflow: auto;
+  }
+
+  body #header-PC {
+    display: none;
+  }
+
+  body #header-mobile {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  body .nav .row {
+    height: 37px;
+  }
+
+  body #main-doc {
+  margin-left: 0px;
+}
+  body .mobile-nav * {
+  display: block;
+}
+  body .container {
+  display: block
+  }
+
+
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*NAV*/
+
+.nav  {
+  /*create the two sections*/
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(15, 1fr);
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  border: solid black;
+  border-width: 0.5px;
+}
+
+.row {
+  border: solid;
+  border-width: 0.5px;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+.nav-link button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#header-PC, #header-mobile  {
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  border-width: 0.5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+ #header-mobile {
+    display: none;
+  }
+
+/*MAIN*/
+
+#main-doc {
+  margin-left: 300px;
+  padding: 30px;
+}
+
+.main-section header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.code-snippet {
+  background-color: #d9dae0;
+  padding: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+code {
+font-family: Courier, 'New Courier', monospace;
+font-size: 12px;
+
+}
